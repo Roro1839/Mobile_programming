@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/unit_price_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unit Price"/>
+
+    <EditText
+        android:id="@+id/quantity_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantity"
+        android:layout_below="@id/unit_price_edit_text"/>
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_below="@id/quantity_edit_text"/>
+
+    <TextView
+        android:id="@+id/total_price_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Price"
+        android:layout_below="@id/calculate_button"/>
+
+    <TextView
+        android:id="@+id/grand_total_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Grand Total"
+        android:layout_below="@id/total_price_text_view"/>
+
+</RelativeLayout>
